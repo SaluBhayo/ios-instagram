@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2B97FE540C0472AFE7DA7E /* libPods-GrammyPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97724E13A7220D59DF42CF7B /* libPods-GrammyPlus.a */; };
+		9D0753031C4374A200791E53 /* IMG_1961.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9D0753021C4374A200791E53 /* IMG_1961.JPG */; };
 		9D0E4FC51C4216F000FE294B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E4FC41C4216F000FE294B /* main.m */; };
 		9D0E4FC81C4216F000FE294B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E4FC71C4216F000FE294B /* AppDelegate.m */; };
 		9D0E4FCB1C4216F000FE294B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E4FCA1C4216F000FE294B /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97724E13A7220D59DF42CF7B /* libPods-GrammyPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrammyPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0753021C4374A200791E53 /* IMG_1961.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1961.JPG; sourceTree = "<group>"; };
 		9D0E4FC01C4216F000FE294B /* GrammyPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrammyPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0E4FC41C4216F000FE294B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D0E4FC61C4216F000FE294B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		9D0E4FCF1C4216F100FE294B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0E4FD21C4216F100FE294B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0E4FD41C4216F100FE294B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7C2EAD1A31B45866A2016C /* Pods-GrammyPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DA80F8056C9D766E2A2E50 /* Pods-GrammyPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2B97FE540C0472AFE7DA7E /* libPods-GrammyPlus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		444499077775D03E7E2BCA1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C2EAD1A31B45866A2016C /* Pods-GrammyPlus.debug.xcconfig */,
+				D5DA80F8056C9D766E2A2E50 /* Pods-GrammyPlus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B8516D398FAAFB85B2FE796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97724E13A7220D59DF42CF7B /* libPods-GrammyPlus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D0E4FB71C4216F000FE294B = {
 			isa = PBXGroup;
 			children = (
 				9D0E4FC21C4216F000FE294B /* GrammyPlus */,
 				9D0E4FC11C4216F000FE294B /* Products */,
+				444499077775D03E7E2BCA1C /* Pods */,
+				4B8516D398FAAFB85B2FE796 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +100,7 @@
 		9D0E4FC31C4216F000FE294B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9D0753021C4374A200791E53 /* IMG_1961.JPG */,
 				9D0E4FC41C4216F000FE294B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D0E4FD71C4216F100FE294B /* Build configuration list for PBXNativeTarget "GrammyPlus" */;
 			buildPhases = (
+				6F46D74B5AB2D8382F5DD0E8 /* Check Pods Manifest.lock */,
 				9D0E4FBC1C4216F000FE294B /* Sources */,
 				9D0E4FBD1C4216F000FE294B /* Frameworks */,
 				9D0E4FBE1C4216F000FE294B /* Resources */,
+				71A987BDE72C19D675F9F904 /* Embed Pods Frameworks */,
+				14539BA70C92CE3F519EBC57 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,11 +168,60 @@
 			files = (
 				9D0E4FD31C4216F100FE294B /* LaunchScreen.storyboard in Resources */,
 				9D0E4FD01C4216F100FE294B /* Assets.xcassets in Resources */,
+				9D0753031C4374A200791E53 /* IMG_1961.JPG in Resources */,
 				9D0E4FCE1C4216F100FE294B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14539BA70C92CE3F519EBC57 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F46D74B5AB2D8382F5DD0E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71A987BDE72C19D675F9F904 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D0E4FBC1C4216F000FE294B /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		9D0E4FD81C4216F100FE294B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7C2EAD1A31B45866A2016C /* Pods-GrammyPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GrammyPlus/Info.plist;
@@ -272,6 +352,7 @@
 		};
 		9D0E4FD91C4216F100FE294B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DA80F8056C9D766E2A2E50 /* Pods-GrammyPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GrammyPlus/Info.plist;
@@ -300,6 +381,7 @@
 				9D0E4FD91C4216F100FE294B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
